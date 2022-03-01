@@ -1,0 +1,129 @@
+.container-home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    animation: slideY 2s;
+    
+}
+
+/*Animação para a logo*/
+@keyframes slideY{
+    from{
+        transform: translateY(-40px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.main h1{
+    font-size: 50px;
+    color: #260C1A;
+}
+
+.main span{
+    color: #260C1A;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+}
+.area-input{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideY2 2s;
+}
+
+/*Animação na area-input*/
+@keyframes slideY2{
+    from{
+        transform: translateY(60px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+.area-input div{
+    width: 100%;
+    height: 46px;
+    background-color: rgb(255, 255, 255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #260C1A;
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+
+.area-input input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    height: 46px;
+    color: #260C1A;
+    outline: none;
+    font-size: 18px;
+}
+
+.area-input input::placeholder{
+    color:rgb(80, 81, 79,0.8);
+}
+
+.area-input button{
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    border: 1px solid #260C1A;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 8px;
+    background-color: #FFFFFF;
+    transition: transform 0.7s;
+
+}
+
+.area-input button:hover{
+    transform: scale(1.05); /*aumenta o tamanho do botão*/
+}
+
+@media (max-width:600px) {
+    .logo img{
+        width: 95px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+
+    .logo span{
+        font-size: 16px;
+    }
+
+    .area-input{
+        width: 85%;
+    }
+}
+
+@media (max-width:700px){
+    .container-home{
+        margin-top: 80px;
+    }
+}
